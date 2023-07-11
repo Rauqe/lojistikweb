@@ -216,21 +216,24 @@ footer {
 .icons{
   padding-top: 150;
   display: flex; 
-  justify-content: center;
-  align-items: center;  
-  height: 200px;
+  justify-content: left;
+  align-items: left;  
+  height: 100px;
 }
 .button2{
   display: inline-block;
   text-decoration: none;
-  color: green;
+  color: white;
   padding: 5px 9px;
   font-size: 18px;
   position: relative;
+  padding-top: 20px;
+  margin-left: 15px;
+
 }
 .button2:hover{
   color: white;
-  background: green;
+  background: rgb(72, 72, 72);
   transition: 0.2s;
 }
 .icons p{
@@ -238,4 +241,14 @@ footer {
 }
 .iconitem{
   width: 100%;
+}
+.social b{
+  font-size: 16px;
+  justify-content: left;
+  display: flex;
+  margin-left: 22px;
+  color: rgb(18, 14, 14);
+}
+.aciklama{
+  background-color: grey;
 }
