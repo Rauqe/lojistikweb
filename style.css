@@ -198,57 +198,34 @@ input {
 
   background-color: #cccccc;
 }
-
-footer {
-  padding: 32px 0;
-  text-align: center;
-  background-color: #f1f1f1;
+.footer{
+  background-color: gray;
+  height: 300px;
 }
-.footer-text {
-  margin: 15px 0;
+.follow{
+  margin-left: 16%;
+  font-size: 18px;
 }
-#footer-link {
-  color: black;
+.follow p{
+  padding-top: 30px;
 }
-#footer-link:hover {
-  color: rgb(0, 180, 0);
-}
-.icons{
-  padding-top: 150;
-  display: flex; 
-  justify-content: left;
-  align-items: left;  
-  height: 100px;
+.share{
+ margin-left: 15%;
+ font-size: 50px;
 }
 .button2{
   display: inline-block;
   text-decoration: none;
   color: white;
   padding: 5px 9px;
-  font-size: 18px;
+  font-size: 21px;
   position: relative;
-  padding-top: 20px;
-  margin-left: 15px;
-
 }
 .button2:hover{
-  color: white;
-  background: rgb(72, 72, 72);
+  color: black;
+  background: white;
   transition: 0.2s;
 }
-.icons p{
-  font-size: 20px;
-}
-.iconitem{
-  width: 100%;
-}
-.social b{
-  font-size: 16px;
-  justify-content: left;
-  display: flex;
-  margin-left: 22px;
-  color: rgb(18, 14, 14);
-}
-.aciklama{
-  background-color: grey;
+.links{
+
 }
