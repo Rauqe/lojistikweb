@@ -24,6 +24,10 @@ html {
   margin-right: 62px;
   display: flex;
 }
+.logo{
+  width: 75px;
+  height: 60px;
+}
 
 /* Styling Navbar Buttons */
 .name-btn, .about-btn, .service-btn, .contact-btn, .send-message-btn {
