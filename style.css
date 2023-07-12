@@ -1,5 +1,7 @@
 /* imports playfair font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +21,7 @@ html {
   z-index: 1;
 }
 .nav-right {
-  margin-right: 32px;
+  margin-right: 62px;
   display: flex;
 }
 
@@ -36,22 +38,23 @@ html {
 }
 .name-btn {
   margin-right: auto;
+  margin-left: 20px;
 }
 /* Hover effect on buttons */
-.name-btn:hover, .about-btn:hover, .service-btn:hover, .contact-btn:hover {
+.about-btn:hover, .service-btn:hover, .contact-btn:hover {
   cursor: pointer;
   background-color: #cccccc;
 }
 /* Home Background Image */
 .mainImg{
-	max-width: 1500px;
 	margin: auto;
-	text-align: center;
-	position: relative;
 	margin-top: 50px;
 	z-index: -1;
+  object-fit: cover
 }
-  
+.ImgStyle{
+  width: 100%;
+}
 /* Home text */
 .home-txt {
   font-size: 36px;
@@ -66,7 +69,7 @@ html {
 .about-page, .service-page, .contact-page {
   max-width: 1100px;
   display: flex;
-  margin: 104px 242px 0 ;
+  margin: 104px 242px;
 }
 
 .about-img, .service-img {
@@ -77,13 +80,12 @@ html {
   opacity: 0.87;
 }
 
-.about-heading, .service-large-heading, .contact-heading {
+.about-heading, .service-large-heading, .contact-heading{
   font-size: 36px;
   font-weight: 400;
-  text-align: center;
-  letter-spacing: 5px;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  letter-spacing:1.8px;
+  margin-top: 1px;
+  margin-bottom: 12px;
 }
 /* margin to both heading and subheading */
 .about-heading, .about-subheading {
@@ -94,8 +96,7 @@ html {
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 5px;
-  text-align: center;
-  margin: 52.80px 0 21px 1.9px;
+  margin: 14px 0 25px 1.9px;
 }
 
 .about-para1, .about-para2 {
@@ -113,7 +114,7 @@ html {
 
 .about-para2 {
   color: #818181;
-  margin-top: 18px;
+  margin-top: 21px;
 }
 
 /* Horizontal rule Divider */
@@ -130,9 +131,8 @@ hr {
 
 .service-large-heading {
   margin-top: 8.5px;
-  margin-bottom: 31px;
+  margin-bottom: 10px;
   text-align: left;
-  margin-left: 156px;
 }
 
 /* Shifting the margin from right to left */
@@ -146,35 +146,35 @@ hr {
 
 .service-items-heading {
   font-size: 20px;
-  letter-spacing: 5px;
-  line-height: 3.2;
+  letter-spacing: 1px;
+  line-height: 1.9;
 }
 
 .service-items-description {
   color: #818181;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 32.5px;
 }
 
 .contact-page {
   display: block;
-  margin-bottom: 98px;
+  margin-bottom: 38px;
 }
 
 .contact-heading {
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 8px;
 }
 
 .contact-para {
   font-size: 15px;
   line-height: 1.5;
-  padding: 15px 0;
+  padding: 4px 0;
 }
 
 .contact-para-heading-address {
   color: #607d8b;
-  padding: 18px 0;
+  padding: 4px 0;
 }
 
 input {
@@ -189,43 +189,87 @@ input {
 }
 
 .send-message-btn {
+  color: white;
   letter-spacing: 0;
   margin-top: 15px;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: black;
+  font-size: 19px;
 }
 .send-message-btn:hover {
 
-  background-color: #cccccc;
+  background-color: white;
+  color: black;
+}
+.bordInput{
+  outline: none;
 }
 .footer{
-  background-color: gray;
-  height: 300px;
+  background-color: #24262b;
+  box-sizing: border-box;
+  padding: 70px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
 }
-.follow{
-  margin-left: 16%;
+.footer-col{
+  width: 33%;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 175px;
+}
+.container{
+  max-width: 100%;
+  margin:auto;
+}
+ul{
+  list-style: none;
+}
+.footer-col h4{
   font-size: 18px;
-}
-.follow p{
-  padding-top: 30px;
-}
-.share{
- margin-left: 15%;
- font-size: 50px;
-}
-.button2{
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  padding: 5px 9px;
-  font-size: 21px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
   position: relative;
 }
-.button2:hover{
-  color: black;
-  background: white;
-  transition: 0.2s;
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  width: 50px;
 }
-.links{
-
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: white;
+  padding-left: 10px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: grey;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: white;
 }
