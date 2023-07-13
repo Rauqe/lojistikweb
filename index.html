@@ -14,7 +14,7 @@
 <body>
   <!-- Top Navigation Bar -->
   <nav class="navbar">
-  <img src="./tırs/logo.jpg" alt="" class="logo"/>
+    <img src="tırs/logo.jpg" alt="" class="logo" />
     <button class="name-btn">Kardeşler Taşımacılık</button>
     <div class="nav-right">
       <button onclick="window.location.href='#gotoabout';" class="about-btn">Hakkımızda</button>
@@ -24,9 +24,8 @@
   </nav>
   <!-- Background Image -->
   <main>
-
     <div class="mainImg">
-      <img src="./tırs/transport.jpeg" alt="">
+      <img src="./tırs/transport.jpeg" alt="" class="ImgStyle">
       <div class="company-name-main">
       </div>
     </div>
@@ -118,12 +117,6 @@
     <p class="contact-para">
       Tam kapsamlı hizmet taşımacılığı sunuyoruz. İhtiyaçlarınızı anlıyoruz. Bizimle iletişim kurmakta tereddüt etmeyin.
     </p>
-    <h3 class="contact-para-heading-address">
-      Beylikdüzü, İstanbul 4116/8A
-    </h3>
-    <p class="contact-para">Ayrıca 0(538)-500-06-79 numaralı telefondan veya kardeslerlojistik@gmail.com adresine
-      e-posta
-      göndererek bize ulaşabilir veya buradan bize mesaj gönderebilirsiniz.</p>
     <form action="">
       <input class="bordInput" type="text" name="text" placeholder="İsim">
       <input class="bordInput" type="number" name="number" placeholder="Telefon Numarası">
@@ -131,12 +124,33 @@
     </form>
     <button class="send-message-btn">Bize Ulasin</button>
   </div>
-  <div class="contact-page">
-    <p class="contact-heading">Konumumuz</p>
-    <p class="contact-para">Buradan konumumuza bakarak bize kolayca ulasabilirsiniz.</p>
+  <div class="location-page">
+    <div class="location">
+      <p class="contact-heading">Konumumuz</p>
+      <p class="contact-para">Buradan konumumuza bakarak bize kolayca ulasabilirsiniz.</p>
 
-    <iframe src="https://www.google.com/maps/d/embed?mid=1TtTis917cM5Put6y-2c4to_utdtCnjc&ehbc=2E312F" width="640"
-      height="380" class="map"></iframe>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1TtTis917cM5Put6y-2c4to_utdtCnjc&ehbc=2E312F" width="640"
+        height="380" class="map"></iframe>
+    </div>
+    <div class="location-text">
+      <h3 class="contact-para-heading-address">
+        Beylikdüzü, İstanbul 4116/8A
+      </h3>
+      <div class="flex">
+      <ul>
+        <li class="yigit"><i class="fa-brands fa-whatsapp"></i></li>
+        <span>+90(538)-500-06-79</span>
+      </ul>
+      </div>
+      <div>
+        <ul>
+        <li class="yigit"><i class="fa-regular fa-envelope"></i></li>
+        <p>kardeslerlogistik@gmail.com</p>
+      </ul>
+      </div>
+      
+      </div>
+    </div>
   </div>
   <!-- Footer -->
   <footer class="footer">
